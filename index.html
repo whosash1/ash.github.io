@@ -234,6 +234,10 @@
         </p>
 
         <div class="btns">
+  <button onclick="glitch()">GLITCH</button>
+  <button class="secondary" onclick="retype()">RETYPE</button>
+  <button onclick="playMusic()">CLICK HERE</button>
+</div>
           <button onclick="glitch()">GLITCH</button>
           <button class="secondary" onclick="retype()">RETYPE</button>
         </div>
@@ -296,6 +300,26 @@
     }
 
     function retype(){ type(); }
+    // 🎵 Music Player
+const audio = new Audio("https://YOUR_AUDIO_LINK.mp3");
+
+function playMusic() {
+  audio.play();
+}
   </script>
+ function playMusic() {
+  document.getElementById("ytplayer").src =
+    "https://www.youtube.com/embed/jbR7YDdeMfY?autoplay=1";
+}
+}
 </body>
+  <div id="player" style="display:none;">
+  <iframe
+    id="ytplayer"
+    width="0"
+    height="0"
+    frameborder="0"
+    allow="autoplay"
+  ></iframe>
+</div>
 </html>
